@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.col{
+
+    background-color: #c6ebc7;
+
+    .nav-item{
+        border-right: solid;
+        color: #ffffff;
+
+        .nav-link{
+            color: black;
+        }
+    }
+
+    .nav-item-2{
+        border-left: solid;
+        color: #ffffff;
+
+        .nav-link{
+            color: black;
+        }
+    }
+}
+
+.primera_imagen{
+    justify-content: center;
+    align-items: center;
+    .primera{
+        width: 80vw;
+        height: 40vh;
+    }
+    
+}
+
+.barra{
+
+    background-color: #c6ebc7; 
+
+
+    .btn-group{
+    
+        .dropdown-toggle{
+                
+            border: 0;
+            color: black;
+            background-color: #c6ebc7;
+        }
+    
+        .dropdown-menu{
+            width: 400px;
+            border:#c6ebc7;
+            background-color: white;
+            border-radius:2px;
+
+            .menu{
+                background-color: white;
+
+                .submenu{
+                    
+                }
+            }
+    
+        }
+    
+    }  
+}
+
+
+
+
+
+
+
+
+
