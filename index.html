@@ -1,454 +1,604 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entrega 1</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="css/medias.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrega 1</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="css/medias.css">
 </head>
+
 <body>
-    <div class="container-fluid">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col mostrar_enlaces">
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+          aria-controls="offcanvasScrolling">Enlaces</button>
 
-        <!-- links para sitios externos -->
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+          id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Visita nuestros sitios mas importantes</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://chaira.uniamazonia.edu.co/Chaira/Logon.aspx">Chaira</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"
+                  href="https://login.microsoftonline.com/common/oauth2/authorize?client_id=00000002-0000-0ff1-ce00-000000000000&redirect_uri=https%3a%2f%2foutlook.office.com%2fowa%2f&resource=00000002-0000-0ff1-ce00-000000000000&response_mode=form_post&response_type=code+id_token&scope=openid&msafed=1&msaredir=1&client-request-id=1151b9a8-8648-a6a1-8ee2-6bbad8f4d836&protectedtoken=true&claims=%7b%22id_token%22%3a%7b%22xms_cc%22%3a%7b%22values%22%3a%5b%22CP1%22%5d%7d%7d%7d&domain_hint=udla.edu.co&nonce=638763711665326981.3dfd8cab-734e-4950-ab6e-db97e35d4bd2&state=Dcu7DoIwFIDhou_iVumF3gbiYGIYwAFJNGw9nJpIJBhoML69Hb5_-zNCyD7ZJRlLIUZLmxjOtVZSaGf5UeIT7eCBGlkEWjjFqAcdKIIzQSosAEWW3iqfvz4_rdHHUPLDEvC1hCF2c-mrlg1Vo-uf2_DRriDcUk9u6qf32HeNuN7UCIJtcL984Gz_">Correo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://aulaextendida.uniamazonia.edu.co/aulaextendida/"
+                  aria-disabled="true">Aula
+                  Extendida</a>
+              </li>
 
-        <div class="row">
-
-            <div class="col"> 
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://chaira.uniamazonia.edu.co/Chaira/Logon.aspx">Chaira</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://login.microsoftonline.com/common/oauth2/authorize?client_id=00000002-0000-0ff1-ce00-000000000000&redirect_uri=https%3a%2f%2foutlook.office.com%2fowa%2f&resource=00000002-0000-0ff1-ce00-000000000000&response_mode=form_post&response_type=code+id_token&scope=openid&msafed=1&msaredir=1&client-request-id=1151b9a8-8648-a6a1-8ee2-6bbad8f4d836&protectedtoken=true&claims=%7b%22id_token%22%3a%7b%22xms_cc%22%3a%7b%22values%22%3a%5b%22CP1%22%5d%7d%7d%7d&domain_hint=udla.edu.co&nonce=638763711665326981.3dfd8cab-734e-4950-ab6e-db97e35d4bd2&state=Dcu7DoIwFIDhou_iVumF3gbiYGIYwAFJNGw9nJpIJBhoML69Hb5_-zNCyD7ZJRlLIUZLmxjOtVZSaGf5UeIT7eCBGlkEWjjFqAcdKIIzQSosAEWW3iqfvz4_rdHHUPLDEvC1hCF2c-mrlg1Vo-uf2_DRriDcUk9u6qf32HeNuN7UCIJtcL984Gz_">Correo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://aulaextendida.uniamazonia.edu.co/aulaextendida/"  aria-disabled="true">Aula Extendida</a>
-                    </li>
-                    
-                </ul>
-            </div>
-
-            <div class="col">
-                
-                <ul class="nav justify-content-end">
-                    <li class="nav-item-2">
-                        <a class="nav-link active" aria-current="page" href="https://www.facebook.com/uniamazonia.edu.co">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                    </li>
-
-                    <li class="nav-item-2">
-                        <a class="nav-link" href="https://x.com/uniamazonia">
-                            <i class="fa-brands fa-x-twitter"></i>
-                        </a>
-                    </li>
-
-                    <li class="nav-item-2">
-                        <a class="nav-link" href="https://www.instagram.com/uniamazonia/">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </li>
-
-                    <li class="nav-item-2">
-                        <a class="nav-link " href="https://www.youtube.com/@uamazonia">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
-                    </li>
-
-                    <li class="nav-item-2">
-                        <a class="nav-link " href="https://www.tiktok.com/@uniamazonia">
-                            <i class="fa-brands fa-tiktok"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            
-        </div>
-
-        <div class="row primera_imagen">
-            <img src="img/LogoSuperior.jpg" class="img-fluid primera" alt="...">
-        </div>
-
-        <!-- quedamos aqui intentando hacer un menu dentro de un menu -->
-        <div class="row">
-            <div class="col barra">
-                <div class="btn-group">
-                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Universidad
-                    </button>
-                    <ul class="dropdown-menu">
-                      <div class="col menu">
-                            <div class="submenu">
-                              <button type="button" class="btn">
-                                Presentacion
-                                <ul class="btn_ul">
-                                  <li>NIT</li>
-                                  <li>Mision y Visión</li>
-                                  <li>Localización fisica</li>
-                                  <li>Horarios de Atencion</li>
-                                  <li>Datos de Contacto</li>
-                                  <li>Simbolos</li>
-                                </ul>
-                                <hr>
-                              </button>
-                            </div>
-                            <p>Organigrama</p>
-                            <div class="submenu">
-                              <button type="button" class="btn">
-                                <hr>
-                                Normativa
-                                <ul class="btn_ul">
-                                  <li>Marco Juridito</li>
-                                  <li>Repositorio de Documentos</li>
-                                  <li>Estatus</li>
-                                </ul>
-                                <hr>
-                              </button>
-                            </div>
-                            <p>Organos de Direccion</p>
-                            <p>Perfil de Funcionarios</p>
-                            <p>Directorio de Funcionarios</p>
-
-                            <div class="submenu">
-                              <button type="button" class="btn">
-                                <hr>
-                                Dependencias
-                                <ul class="btn_ul">
-                                  <li>Vicerretorias</li>
-                                  <li>Facultades</li>
-                                  <li>Departamentos</li>
-                                  <li>Direcciones</li>
-                                  <li>Otras Dependencias</li>
-                                </ul>
-                                <hr>
-                              </button>
-                            </div>
-
-                            
-                        </div>
-                    </ul>
-                  </div>
-            </div>
-            <div class="col barra">
-                <div class="btn-group">
-                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Programas
-                    </button>
-                    <ul class="dropdown-menu">
-                      ...
-                    </ul>
-                  </div>
-            </div>
-            <div class="col barra">
-                <div class="btn-group">
-                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Gestion
-                    </button>
-                    <ul class="dropdown-menu">
-                      ...
-                    </ul>
-                  </div>
-            </div>
-            <div class="col barra">
-                <div class="btn-group">
-                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Servicios
-                    </button>
-                    <ul class="dropdown-menu">
-                      ...
-                    </ul>
-                  </div>
-            </div>
-            <div class="col barra">
-                <div class="btn-group">
-                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Convocatorias
-                    </button>
-                    <ul class="dropdown-menu">
-                      ...
-                    </ul>
-                  </div>
-            </div>
-            <div class="col barra">
-                <div class="btn-group">
-                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Investigación
-                    </button>
-                    <ul class="dropdown-menu">
-                      ...
-                    </ul>
-                  </div>
-            </div>
-            <div class="col barra">
-                <div class="btn-group">
-                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Sedes
-                    </button>
-                    <ul class="dropdown-menu">
-                      ...
-                    </ul>
-                  </div>
-            </div>
-            
-        </div>
-
-        <div class="row">
-            <div class="container-fluid p-0">
-                <div id="carouselExampleDark" class="carousel carousel-dark slide">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="img/Captura de pantalla 2025-02-28 192840.png" class="d-block w-100" alt="...">
-                        
-                      </div>
-                      <div class="carousel-item" data-bs-interval="2000">
-                        <img src="img/slider.png" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/Captura de pantalla 2025-02-28 194723.png" class="d-block w-100" alt="...">
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-            </div>
-        </div>
-        <div class="row">
-          <div class="col barra_abajo"></div>
-          <div class="col barra_rojo"></div>
-          
-          <figure class="text-center">
-            <blockquote class="blockquote">
-              <h3>Descubre todo sobre la Universidad de la Amazonía</h3>
-            </blockquote>
-          </figure>
-        </div>
-        <div class="row">
-          <div class="col importante">
-            <p class="d-inline-flex gap-1">
-              <a class="btn btn-primary " data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Inscripciones
-              </a>
-            </p>
-            <div class="collapse" id="collapseExample1">
-              <div class="card card-body">
-                Te invitamos a que persigas tus sueños acompañado/a de los mejores docentes encargados de orientar las diferentes carreras ofrecidas en nuestra alma mater.
-                
-                <a class="icon-link" href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/direcciones/direccion-de-admision-registro-y-control-academico/118-inscripciones.html">
-                  Leer mas
-                  <svg class="bi" aria-hidden="true"><use xlink:href=""></use></svg>
+            </ul>
+            <ul class="nav justify-content-start">
+              <li class="nav-item-2">
+                <a class="nav-link active" aria-current="page" href="https://www.facebook.com/uniamazonia.edu.co">
+                  <i class="fa-brands fa-facebook"></i>
+                  facebook
                 </a>
-              </div>
-            </div>
-          </div>
-          <div class="col importante">
-            <p class="d-inline-flex gap-1">
-              <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Aspirantes
-              </a>
-            </p>
-            <div class="collapse" id="collapseExample2">
-              <div class="card card-body">
-                Estas a un paso de unirte a esta gran familia amazonica, termina tu proceso y pertenece a esta union.
-                <a class="icon-link" href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/direcciones/direccion-de-admision-registro-y-control-academico/228-aspirantes.html">
-                  Leer mas
-                  <svg class="bi" aria-hidden="true"><use xlink:href=""></use></svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col importante">
-            <p class="d-inline-flex gap-1">
-              <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Estudiantes
-              </a>
-            </p>
-            <div class="collapse" id="collapseExample3">
-              <div class="card card-body">
-                Conoce todos los procesos estudiantiles que puedes realizar ahora que eres parte de esta gran comunidad.
-                <a class="icon-link" href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/direcciones/direccion-de-admision-registro-y-control-academico/231-estudiantesd.html">
-                  Leer mas
-                  <svg class="bi" aria-hidden="true"><use xlink:href=""></use></svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col importante">
-            <p class="d-inline-flex gap-1">
-              <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Graduados
-              </a>
-            </p>
-            <div class="collapse" id="collapseExample4">
-              <div class="card card-body">
-                Querido egresado/a conoce ahora todos los beneficios a los que puedes acceder por haber culminado tus estudios con nosotros.
-                <a class="icon-link" href="https://www.uniamazonia.edu.co/Inicio/index.php/la-universidad/direccion/oficinas/portal-de-graduados.html">
-                  Leer mas
-                  <svg class="bi" aria-hidden="true"><use xlink:href=""></use></svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col importante">
-            <p class="d-inline-flex gap-1">
-              <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Calendario Importante
-              </a>
-            </p>
-            <div class="collapse" id="collapseExample5">
-              <div class="card card-body">
-                Mantente informado de las fechas mas importantes para nuestra querida universidad.
-                <a class="icon-link" href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/direcciones/direccion-de-admision-registro-y-control-academico/233-calendario-academico/35-cuales-son-las-fechas-academicas-mas-importantes-de-cada-semestre.html">
-                  Leer mas
-                  <svg class="bi" aria-hidden="true"><use xlink:href=""></use></svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col importante">
-            <p class="d-inline-flex gap-1">
-              <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Transparencia
-              </a>
-            </p>
-            <div class="collapse" id="collapseExample6">
-              <div class="card card-body">
-                Conoce mas a detalle nuestros procesos libres de ilegalidades e incogruencias en sus tramites.
-                <a class="icon-link" href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/transparencia-y-acceso-a-informacion-publica.html">
-                  Leer mas
-                  <svg class="bi" aria-hidden="true"><use xlink:href=""></use></svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        
+              </li>
 
-        </div>
-        <div class="row">
-          
-          <blockquote class="blockquote">
-            <h5>Noticias Importantes</h5>
-          </blockquote>
-        </div>
+              <li class="nav-item-2">
+                <a class="nav-link" href="https://x.com/uniamazonia">
+                  <i class="fa-brands fa-x-twitter"></i>
+                  Twitter / X
+                </a>
+              </li>
 
-        <div class="row noticias">
-          <div class="col noticias">
-            <div class="card mb-3" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="img/reciclaje.png" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Dia Mundial del Reciclaje</h5>
-                    <p class="card-text">Un Llamado Global a la Acción por un Planeta más Sostenible. #GestiónEInvestigaciónParaElDesarrolloDeLaAmazonia</p>
-                    <p class="card-text"><small class="text-body-secondary">
-                      <a class="icon-link" href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/noticias-y-eventos/117-academia/12519-dia-mundial-del-reciclaje.html">
-                        Leer mas
-                        <svg class="bi" aria-hidden="true"><use xlink:href=""></use></svg>
-                      </a>
-                    </small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col noticias">
-            <div class="card mb-3" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="img/persona.png" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Sus estudios lo llevaron lejos</h5>
-                    <p class="card-text">Nelson Andrés Losada Rodríguez graduado de Contaduría Pública, un paso en la perseverancia</p>
-                    <p class="card-text"><small class="text-body-secondary">
-                      <a class="icon-link" href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/noticias-y-eventos/117-academia/12517-movilidad-internacional-un-puente-hacia-el-conocimiento-y-nuevas-oportunidades.html">
-                        Leer mas
-                        <svg class="bi" aria-hidden="true"><use xlink:href=""></use></svg>
-                      </a>
-                    </small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
+              <li class="nav-item-2">
+                <a class="nav-link" href="https://www.instagram.com/uniamazonia/">
+                  <i class="fa-brands fa-instagram"></i>
+                  Instagram
+                </a>
+              </li>
+
+              <li class="nav-item-2">
+                <a class="nav-link " href="https://www.youtube.com/@uamazonia">
+                  <i class="fa-brands fa-youtube"></i>
+                  Youtube
+                </a>
+              </li>
+
+              <li class="nav-item-2">
+                <a class="nav-link " href="https://www.tiktok.com/@uniamazonia">
+                  <i class="fa-brands fa-tiktok"></i>
+                  Tiktok
+                </a>
+              </li>
+
+            </ul>
+
           </div>
         </div>
-        <div class="row noticias">
-          <div class="col noticias">
-            <div class="card mb-3" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="img/futbol.png" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Futbol Amazonía</h5>
-                    <p class="card-text">Vive tu pasion por el futbol, consulta los horarios y contactanos. #GestiónEInvestigaciónParaElDesarrolloDeLaAmazonia</p>
-                    <p class="card-text"><small class="text-body-secondary">
-                      <a class="icon-link" href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/noticias-y-eventos/117-academia/12515-futbol-uniamazonia.html">
-                        Leer mas
-                        <svg class="bi" aria-hidden="true"><use xlink:href=""></use></svg>
-                      </a>
-                    </small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col noticias">
-            <div class="card mb-3" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="img/base.png" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Jornada de Formación</h5>
-                    <p class="card-text">Invitación a todos los Docentes de la universidad de la Amazonia para que participen en la Jornada de Formación en recursos para la academia y la investigación con Consorcio Colombia.</p>
-                    <p class="card-text"><small class="text-body-secondary">
-                      <a class="icon-link" href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/noticias-y-eventos/117-academia/12516-jornada-de-formacion-en-recursos-para-la-academia-y-la-investigacion-con-consorcio-colombia.html">
-                        Leer mas
-                        <svg class="bi" aria-hidden="true"><use xlink:href=""></use></svg>
-                      </a>
-                    </small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      </div>
+      <div class="col mostrar_enlaces-imagen">
+        <img src="img/Logo-u-amazonia.png" class="img-thumbnail" alt="...">
+      </div>
+    </div>
 
-        
+    <!-- links para sitios externos -->
 
 
+    <div class="row ">
 
+      <div class="col sitios">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://chaira.uniamazonia.edu.co/Chaira/Logon.aspx">Chaira</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"
+              href="https://login.microsoftonline.com/common/oauth2/authorize?client_id=00000002-0000-0ff1-ce00-000000000000&redirect_uri=https%3a%2f%2foutlook.office.com%2fowa%2f&resource=00000002-0000-0ff1-ce00-000000000000&response_mode=form_post&response_type=code+id_token&scope=openid&msafed=1&msaredir=1&client-request-id=1151b9a8-8648-a6a1-8ee2-6bbad8f4d836&protectedtoken=true&claims=%7b%22id_token%22%3a%7b%22xms_cc%22%3a%7b%22values%22%3a%5b%22CP1%22%5d%7d%7d%7d&domain_hint=udla.edu.co&nonce=638763711665326981.3dfd8cab-734e-4950-ab6e-db97e35d4bd2&state=Dcu7DoIwFIDhou_iVumF3gbiYGIYwAFJNGw9nJpIJBhoML69Hb5_-zNCyD7ZJRlLIUZLmxjOtVZSaGf5UeIT7eCBGlkEWjjFqAcdKIIzQSosAEWW3iqfvz4_rdHHUPLDEvC1hCF2c-mrlg1Vo-uf2_DRriDcUk9u6qf32HeNuN7UCIJtcL984Gz_">Correo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://aulaextendida.uniamazonia.edu.co/aulaextendida/" aria-disabled="true">Aula
+              Extendida</a>
+          </li>
 
+        </ul>
+      </div>
 
+      <div class="col sitios">
 
+        <ul class="nav justify-content-end">
+          <li class="nav-item-2">
+            <a class="nav-link active" aria-current="page" href="https://www.facebook.com/uniamazonia.edu.co">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
 
+          <li class="nav-item-2">
+            <a class="nav-link" href="https://x.com/uniamazonia">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </li>
+
+          <li class="nav-item-2">
+            <a class="nav-link" href="https://www.instagram.com/uniamazonia/">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+
+          <li class="nav-item-2">
+            <a class="nav-link " href="https://www.youtube.com/@uamazonia">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+
+          <li class="nav-item-2">
+            <a class="nav-link " href="https://www.tiktok.com/@uniamazonia">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </li>
+
+        </ul>
+      </div>
 
     </div>
 
+    <div class="row primera_imagen">
+      <img src="img/LogoSuperior.jpg" class="img-fluid primera" alt="...">
+    </div>
 
-    <script src="js/bootstrap.bundle.js"></script>
+    <!-- quedamos aqui intentando hacer un menu dentro de un menu -->
+
+
+    <div class="row">
+      <figure class="text-center">
+        <blockquote class="blockquote_primerTitulo">
+          <h3>Descubre todo sobre la Universidad de la Amazonía</h3>
+        </blockquote>
+      </figure>
+    </div>
+
+    <div class="row">
+      <div class="col rojo"></div>
+    </div>
+    <div class="row">
+
+      <div class="col barra">
+        <div class="btn-group">
+          <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Universidad
+          </button>
+          <ul class="dropdown-menu">
+            <div class="col menu">
+              <div class="submenu">
+                <button type="button" class="btn">
+                  Presentacion
+                  <ul class="btn_ul">
+                    <li>NIT</li>
+                    <li>Mision y Visión</li>
+                    <li>Localización fisica</li>
+                    <li>Horarios de Atencion</li>
+                    <li>Datos de Contacto</li>
+                    <li>Simbolos</li>
+                  </ul>
+                  <hr>
+                </button>
+              </div>
+              <p>Organigrama</p>
+              <div class="submenu">
+                <button type="button" class="btn">
+                  <hr>
+                  Normativa
+                  <ul class="btn_ul">
+                    <li>Marco Juridito</li>
+                    <li>Repositorio de Documentos</li>
+                    <li>Estatus</li>
+                  </ul>
+                  <hr>
+                </button>
+              </div>
+              <p>Organos de Direccion</p>
+              <p>Perfil de Funcionarios</p>
+              <p>Directorio de Funcionarios</p>
+
+              <div class="submenu">
+                <button type="button" class="btn">
+                  <hr>
+                  Dependencias
+                  <ul class="btn_ul">
+                    <li>Vicerretorias</li>
+                    <li>Facultades</li>
+                    <li>Departamentos</li>
+                    <li>Direcciones</li>
+                    <li>Otras Dependencias</li>
+                  </ul>
+                  <hr>
+                </button>
+              </div>
+
+
+            </div>
+          </ul>
+        </div>
+      </div>
+      <div class="col barra">
+        <div class="btn-group">
+          <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Programas
+          </button>
+          <ul class="dropdown-menu">
+            ...
+          </ul>
+        </div>
+      </div>
+      <div class="col barra">
+        <div class="btn-group">
+          <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Gestion
+          </button>
+          <ul class="dropdown-menu">
+            ...
+          </ul>
+        </div>
+      </div>
+      <div class="col barra">
+        <div class="btn-group">
+          <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Servicios
+          </button>
+          <ul class="dropdown-menu">
+            ...
+          </ul>
+        </div>
+      </div>
+      <div class="col barra">
+        <div class="btn-group">
+          <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Convocatorias
+          </button>
+          <ul class="dropdown-menu">
+            ...
+          </ul>
+        </div>
+      </div>
+      <div class="col barra">
+        <div class="btn-group">
+          <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Investigación
+          </button>
+          <ul class="dropdown-menu">
+            ...
+          </ul>
+        </div>
+      </div>
+      <div class="col barra">
+        <div class="btn-group">
+          <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Sedes
+          </button>
+          <ul class="dropdown-menu">
+            ...
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="container-fluid p-0">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="img/Captura de pantalla 2025-02-28 192840.png" class="d-block w-100" alt="...">
+
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="img/slider.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/Captura de pantalla 2025-02-28 194723.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col barra_abajo"></div>
+      <div class="col barra_rojo"></div>
+
+      <figure class="text-center">
+        <blockquote class="blockquote">
+          <h3>Descubre todo sobre la Universidad de la Amazonía</h3>
+        </blockquote>
+      </figure>
+    </div>
+    <div class="row">
+      <div class="col importante">
+        <p class="d-inline-flex gap-1">
+          <a class="btn btn-primary " data-bs-toggle="collapse" href="#collapseExample1" role="button"
+            aria-expanded="false" aria-controls="collapseExample">
+            Inscripciones
+          </a>
+        </p>
+        <div class="collapse" id="collapseExample1">
+          <div class="card card-body">
+            Te invitamos a que persigas tus sueños acompañado/a de los mejores docentes encargados de orientar las
+            diferentes carreras ofrecidas en nuestra alma mater.
+
+            <a class="icon-link"
+              href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/direcciones/direccion-de-admision-registro-y-control-academico/118-inscripciones.html">
+              Leer mas
+              <svg class="bi" aria-hidden="true">
+                <use xlink:href=""></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col importante">
+        <p class="d-inline-flex gap-1">
+          <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample2" role="button"
+            aria-expanded="false" aria-controls="collapseExample">
+            Aspirantes
+          </a>
+        </p>
+        <div class="collapse" id="collapseExample2">
+          <div class="card card-body">
+            Estas a un paso de unirte a esta gran familia amazonica, termina tu proceso y pertenece a esta union.
+            <a class="icon-link"
+              href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/direcciones/direccion-de-admision-registro-y-control-academico/228-aspirantes.html">
+              Leer mas
+              <svg class="bi" aria-hidden="true">
+                <use xlink:href=""></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col importante">
+        <p class="d-inline-flex gap-1">
+          <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample3" role="button"
+            aria-expanded="false" aria-controls="collapseExample">
+            Estudiantes
+          </a>
+        </p>
+        <div class="collapse" id="collapseExample3">
+          <div class="card card-body">
+            Conoce todos los procesos estudiantiles que puedes realizar ahora que eres parte de esta gran comunidad.
+            <a class="icon-link"
+              href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/direcciones/direccion-de-admision-registro-y-control-academico/231-estudiantesd.html">
+              Leer mas
+              <svg class="bi" aria-hidden="true">
+                <use xlink:href=""></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col importante">
+        <p class="d-inline-flex gap-1">
+          <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample4" role="button"
+            aria-expanded="false" aria-controls="collapseExample">
+            Graduados
+          </a>
+        </p>
+        <div class="collapse" id="collapseExample4">
+          <div class="card card-body">
+            Querido egresado/a conoce ahora todos los beneficios a los que puedes acceder por haber culminado tus
+            estudios con nosotros.
+            <a class="icon-link"
+              href="https://www.uniamazonia.edu.co/Inicio/index.php/la-universidad/direccion/oficinas/portal-de-graduados.html">
+              Leer mas
+              <svg class="bi" aria-hidden="true">
+                <use xlink:href=""></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col importante">
+        <p class="d-inline-flex gap-1">
+          <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample5" role="button"
+            aria-expanded="false" aria-controls="collapseExample">
+            Calendario Importante
+          </a>
+        </p>
+        <div class="collapse" id="collapseExample5">
+          <div class="card card-body">
+            Mantente informado de las fechas mas importantes para nuestra querida universidad.
+            <a class="icon-link"
+              href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/direcciones/direccion-de-admision-registro-y-control-academico/233-calendario-academico/35-cuales-son-las-fechas-academicas-mas-importantes-de-cada-semestre.html">
+              Leer mas
+              <svg class="bi" aria-hidden="true">
+                <use xlink:href=""></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col importante">
+        <p class="d-inline-flex gap-1">
+          <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample6" role="button"
+            aria-expanded="false" aria-controls="collapseExample">
+            Transparencia
+          </a>
+        </p>
+        <div class="collapse" id="collapseExample6">
+          <div class="card card-body">
+            Conoce mas a detalle nuestros procesos libres de ilegalidades e incogruencias en sus tramites.
+            <a class="icon-link"
+              href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/transparencia-y-acceso-a-informacion-publica.html">
+              Leer mas
+              <svg class="bi" aria-hidden="true">
+                <use xlink:href=""></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="row">
+
+      <blockquote class="blockquote tituloNoticias">
+        <h5>Noticias Importantes</h5>
+      </blockquote>
+    </div>
+
+    <div class="row noticias">
+      <div class="col noticias">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="img/reciclaje.png" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Dia Mundial del Reciclaje</h5>
+                <p class="card-text">Un Llamado Global a la Acción por un Planeta más Sostenible.
+                  #GestiónEInvestigaciónParaElDesarrolloDeLaAmazonia</p>
+                <p class="card-text"><small class="text-body-secondary">
+                    <a class="icon-link"
+                      href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/noticias-y-eventos/117-academia/12519-dia-mundial-del-reciclaje.html">
+                      Leer mas
+                      <svg class="bi" aria-hidden="true">
+                        <use xlink:href=""></use>
+                      </svg>
+                    </a>
+                  </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col noticias">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="img/persona.png" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Sus estudios lo llevaron lejos</h5>
+                <p class="card-text">Nelson Andrés Losada Rodríguez graduado de Contaduría Pública, un paso en la
+                  perseverancia</p>
+                <p class="card-text"><small class="text-body-secondary">
+                    <a class="icon-link"
+                      href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/noticias-y-eventos/117-academia/12517-movilidad-internacional-un-puente-hacia-el-conocimiento-y-nuevas-oportunidades.html">
+                      Leer mas
+                      <svg class="bi" aria-hidden="true">
+                        <use xlink:href=""></use>
+                      </svg>
+                    </a>
+                  </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row noticias">
+      <div class="col noticias">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="img/futbol.png" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Futbol Amazonía</h5>
+                <p class="card-text">Vive tu pasion por el futbol, consulta los horarios y contactanos.
+                  #GestiónEInvestigaciónParaElDesarrolloDeLaAmazonia</p>
+                <p class="card-text"><small class="text-body-secondary">
+                    <a class="icon-link"
+                      href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/noticias-y-eventos/117-academia/12515-futbol-uniamazonia.html">
+                      Leer mas
+                      <svg class="bi" aria-hidden="true">
+                        <use xlink:href=""></use>
+                      </svg>
+                    </a>
+                  </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col noticias">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="img/base.png" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Jornada de Formación</h5>
+                <p class="card-text">Invitación a todos los Docentes de la universidad de la Amazonia para que
+                  participen en la Jornada de Formación en recursos para la academia y la investigación con Consorcio
+                  Colombia.</p>
+                <p class="card-text"><small class="text-body-secondary">
+                    <a class="icon-link"
+                      href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/noticias-y-eventos/117-academia/12516-jornada-de-formacion-en-recursos-para-la-academia-y-la-investigacion-con-consorcio-colombia.html">
+                      Leer mas
+                      <svg class="bi" aria-hidden="true">
+                        <use xlink:href=""></use>
+                      </svg>
+                    </a>
+                  </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+  <script src="js/bootstrap.bundle.js"></script>
 </body>
+
 </html>
