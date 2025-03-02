@@ -61,6 +61,15 @@
     display: block;
 }
 
+.salir{
+    display: block;
+}
+
+.parte_Informacion{
+    display: flex;
+    flex-direction: column;
+}
+
 @media (max-width: 799px) and (min-width:500px){
 
     .sitios{
@@ -93,6 +102,15 @@
 
     .tituloNoticias{
         display: block;
+    }
+
+    .salir{
+        display: block;
+    }
+
+    .parte_Informacion{
+        display: flex;
+        flex-direction: column;
     }
 
 }
@@ -132,6 +150,11 @@
 
     .tituloNoticias{
         display: block;
+    }
+
+    .parte_Informacion{
+        display: flex;
+        flex-direction: row;
     }
 
     

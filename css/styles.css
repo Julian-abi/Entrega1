@@ -172,6 +172,94 @@
 
 
 
+.repositorios{
+    margin: 5px;
+
+    .card{
+        padding: 0px;
+        border-color: #c6ebc7;
+        background-color: #c6ebc7;
+    }
+
+    .card-header{
+        color: white;
+        background-color: #1ec122;
+
+    }
+
+    .btn-primary{
+        background-color: #fe3f3f;
+        border-color: #fe3f3f;
+    }
+}
+
+.repositorios_rojo{
+    margin: 5px;
+
+    .rojo-repositorio{
+        padding: 0px;
+        background-color: #ea6e6e;
+        color: white;
+
+        .card-header{
+            background-color: #fe3f3f;
+        }
+
+        .btn-primary{
+            background-color: #1ec122;
+            border-color: #1ec122;
+        }
+    }
+}
+
+.impor{
+    background-color: white;
+
+    .intento{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: white;
+
+        .card{
+            margin-bottom: 14px;
+            background-color: #c6ebc7;
+
+            .btn-primary{
+                background-color: #1ec122;
+                border-color: #1ec122;
+            }
+        }
+
+    }
+
+
+    .accordion-item{
+        background-color: white;
+    }
+
+}
+
+.rector{
+    display: flex;
+    justify-content: center;
+    border-radius: 500px;
+}
+
+.rojobarra{
+    margin-top: 10px;
+    background-color: #fe3f3f;
+    height: 10px;
+
+    .tituloNoticias{
+        background-color: #ea6e6e;
+    }
+}
+
+
+
+
 
 
 
