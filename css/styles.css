@@ -1,12 +1,14 @@
 *{
     padding: 0;
     margin: 0;
+    
 }
+
 
 
 .col{
 
-    background-color: #c6ebc7;
+    background-color: #1ec122;
 
     .nav-item{
         border-right: solid;
@@ -39,19 +41,21 @@
 
 .barra{
 
-    background-color: #c6ebc7; 
+    background-color: #1ec122; 
 
 
     .btn-group{
     
         .dropdown-toggle{
+            font-size: 20px;
                 
             border: 0;
             color: black;
-            background-color: #c6ebc7;
+            background-color: #1ec122;
         }
     
         .dropdown-menu{
+            font-size: 18px; 
             width: 400px;
             border:#c6ebc7;
             background-color: white;
@@ -59,10 +63,40 @@
 
             .menu{
                 background-color: white;
+                display: flex;
+                flex-direction: column;
 
-                .submenu{
+                p{
+                    margin: 0;
+                }
+
+                hr{
+                    margin: 0;
+                }
+
+                .btn{
+
+                    
+                    font-size: 18px;
+                    padding: 0;
+                }
+                .btn_ul{
+                    list-style: none;
+                    display: none;
+
+                }
+
+                .btn:hover ul{
+
+                    background-color: white;
+                    display: block;
+                    position: absolute;
+                    top: 10px;
+                    left: 130px;
+                    border-top: #1ec122;
                     
                 }
+                
             }
     
         }
@@ -70,6 +104,69 @@
     }  
 }
 
+.barra_abajo{
+    height: 20px;
+}
+
+.barra_rojo{
+    background-color: red; 
+}
+
+.blockquote{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.importante{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top:0px;
+    background-color: white;
+    
+    .btn-primary{
+        font-size: 18px;
+        background-color: #fe3f3f;
+        color: #ffffff;
+        border-color: #fe3f3f;
+
+        .uno{
+
+        }
+    }
+
+    .collapse{
+        font-size: 18px;
+        .card-body{
+            background-color: #c6ebc7;
+        }
+    }
+}
+
+.blockquote{
+    margin-bottom: 20px;
+}
+
+.col-md-4{
+
+    margin-top: 10px;
+}
+
+.noticias{
+
+    background-color: white;
+
+    justify-content: center;
+    align-items: center;
+
+    .card-text{
+        margin-bottom: 0px;
+    }
+
+}
 
 
 
