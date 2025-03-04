@@ -70,6 +70,18 @@
     flex-direction: column;
 }
 
+.impor{
+    display: none;
+}
+
+.salir{
+    display: none;
+}
+
+.footer{
+    display: none;
+}
+
 @media (max-width: 799px) and (min-width:500px){
 
     .sitios{
@@ -111,6 +123,18 @@
     .parte_Informacion{
         display: flex;
         flex-direction: column;
+    }
+
+    .impor{
+        display: none;
+    }
+
+    .salir{
+        display: none;
+    }
+
+    .footer{
+        display: flex;
     }
 
 }
@@ -155,6 +179,15 @@
     .parte_Informacion{
         display: flex;
         flex-direction: row;
+    }
+
+    .impor{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer{
+        display: flex;
     }
 
     
