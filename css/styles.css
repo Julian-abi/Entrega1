@@ -114,6 +114,8 @@
     margin-top: 0px;
     background-color: white;
 
+    margin-bottom: 15px;
+
     .btn.btn-primary {
         font-size: 18px;
         background-color:#208716;
@@ -133,12 +135,14 @@
 
 
 .mostrar_enlaces{
+
     .btn-primary:hover{
         box-shadow: 0px 6px 12px black;
         color: black;
         background-color: #84f560;
         border-color: #84f560;
     }
+
 }
 
 .col.importante:hover{
@@ -373,8 +377,6 @@
 .accordion{
 
     border-radius: 0px;
-
-    
 
     .accordion-header{
         color: #208716;

@@ -10,17 +10,18 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="css/medias.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 
 </head>
 
 <body>
   <div class="container-fluid p-0">
-    <div class="row mostrar_enlaces">
-      <div class="col mostrar_enlaces" >
-        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+    <div class="row mostrar_enlaces ">
+      <div class="col mostrar_enlaces fixed-top" >
+        <button class="btn btn-primary animate__animated animate__backInDown" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
           aria-controls="offcanvasScrolling">Enlaces</button>
 
         <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
@@ -97,7 +98,7 @@
     <!-- links para sitios externos -->
 
 
-    <div class="row sitios fixed-top">
+    <div class="row sitios fixed-top animate__animated animate__backInLeft">
 
       <div class="col sitios">
         <ul class="nav" >
@@ -172,7 +173,7 @@
     
     
     <div class="row texto">
-      <figure class="text-center">
+      <figure class="text-center ">
         <blockquote class="blockquote_primerTitulo">
           <h1>Conócenos</h1>
         </blockquote>
@@ -183,7 +184,7 @@
     
     <div class="row importante">
       <div class="col importante">
-        <p class="d-inline-flex gap-1">
+        <p class="d-inline-flex gap-1 ">
           <a class="btn btn-primary " data-bs-toggle="collapse" href="#collapseExample1" role="button"
             aria-expanded="false" aria-controls="collapseExample">
             Inscripciones
@@ -634,7 +635,7 @@
             <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body">
                 <div id="paj">
-                  <img src="img/revista.png" alt="">
+                  <img src="img/revista.png" class="img-fluid" alt="">
                 </div>
                 <strong><a  class="li" href="https://editorial.uniamazonia.edu.co/">Portal Revistas de la Universidad de la Amazonía</a></strong> 
               </div>
@@ -649,7 +650,7 @@
             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body">
                 <div id="paj">
-                  <img src="img/banner.png" alt="">
+                  <img src="img/banner.png" class="img-fluid" alt="">
                 </div>
                 <strong><a  class="li" href="https://bit.ly/instruc_poa">Instructivo Interactivo Plan Operativo Anual</a></strong> 
               </div>
@@ -664,7 +665,7 @@
             <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body">
                 <div id="paj">
-                  <img src="img/cuentas.png" alt="">
+                  <img src="img/cuentas.png" class="img-fluid" alt="">
                 </div>
                 <strong><a class="li" href="https://www.uniamazonia.edu.co/documentos/docs/Rectoria/Informes%20de%20Gestion/2023/Informe%20Audiencia%20P%C3%BAblica%20de%20rendicion.pdf">Informe de audiencia Publica. Rendicion de cuentas</a></strong> 
               </div>
@@ -673,7 +674,10 @@
         </div>
       </div>
       
+      
     </div>
+
+    <hr>
 
     <div class="row footer">
         <figure class="text-center">
