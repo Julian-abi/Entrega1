@@ -18,8 +18,8 @@
 
 <body>
   <div class="container-fluid p-0">
-    <div class="row">
-      <div class="col mostrar_enlaces">
+    <div class="row mostrar_enlaces">
+      <div class="col mostrar_enlaces" >
         <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
           aria-controls="offcanvasScrolling">Enlaces</button>
 
@@ -89,18 +89,18 @@
           </div>
         </div>
       </div>
-      <div class="col mostrar_enlaces-imagen">
-        <img src="img/Logo-u-amazonia.png" class="img-thumbnail" alt="...">
+      <div class="row tablet">
+        <img src="img/tablet.png" class="img-fluid tablet" alt="...">
       </div>
     </div>
 
     <!-- links para sitios externos -->
 
 
-    <div class="row sitios">
+    <div class="row sitios fixed-top">
 
       <div class="col sitios">
-        <ul class="nav">
+        <ul class="nav" >
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Inicio</a>
           </li>
@@ -157,12 +157,6 @@
 
     </div>
 
-    <!-- <div class="row primera_imagen">
-      <img src="img/LogoSuperior.jpg" class="img-fluid primera" alt="...">
-    </div> -->
-
-    <!-- quedamos aqui intentando hacer un menu dentro de un menu -->
-
     <div class="row imagen container-fluid p-0">
       <div id="contenedor-imagen">
         
@@ -170,16 +164,16 @@
       </div> 
 
     </div>
-    <div class="row">
-      <figure class="text-center">
-        <blockquote class="blockquote_primerTitulo">
-          <h3>Descubre todo sobre la Universidad de la Amazonía</h3>
-        </blockquote>
-      </figure>
-    </div>
+
+    <!-- <div class="row tablet">
+      <img src="img/tablet.png" class="img-fluid tablet" alt="...">
+    </div> -->
+
+    
+    
     <div class="row texto">
       <figure class="text-center">
-        <blockquote class="blockquote">
+        <blockquote class="blockquote_primerTitulo">
           <h1>Conócenos</h1>
         </blockquote>
       </figure>
@@ -347,9 +341,9 @@
 
     </div>
 
-    <div class="row">
+    <div class="row noticios">
       <figure class="text-center">
-        <blockquote class="blockquote">
+        <blockquote class="blockquote noticios">
           <h1>Noticias Importantes</h1>
           <hr>
         </blockquote>
@@ -518,7 +512,7 @@
 
     <div class="row reposi">
       <figure class="text-center">
-        <blockquote class="blockquote">
+        <blockquote class="blockquote noticios">
           <h1>Repositorios</h1>
         </blockquote>
       </figure>
@@ -576,7 +570,7 @@
     
     <div class="row">
       <figure class="text-center">
-        <blockquote class="blockquote salir">
+        <blockquote class="blockquote noticios">
           <h1>Informacion Adicional</h1>
         </blockquote>
       </figure>
@@ -639,7 +633,10 @@
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <strong><a href="https://editorial.uniamazonia.edu.co/">Portal Revistas de la Universidad de la Amazonía</a></strong> 
+                <div id="paj">
+                  <img src="img/revista.png" alt="">
+                </div>
+                <strong><a  class="li" href="https://editorial.uniamazonia.edu.co/">Portal Revistas de la Universidad de la Amazonía</a></strong> 
               </div>
             </div>
           </div>
@@ -651,7 +648,10 @@
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <strong><a href="https://bit.ly/instruc_poa">Instructivo Interactivo Plan Operativo Anual</a></strong> 
+                <div id="paj">
+                  <img src="img/banner.png" alt="">
+                </div>
+                <strong><a  class="li" href="https://bit.ly/instruc_poa">Instructivo Interactivo Plan Operativo Anual</a></strong> 
               </div>
             </div>
           </div>
@@ -663,7 +663,10 @@
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <strong><a href="https://www.uniamazonia.edu.co/documentos/docs/Rectoria/Informes%20de%20Gestion/2023/Informe%20Audiencia%20P%C3%BAblica%20de%20rendicion.pdf">Informe de audiencia Publica. Rendicion de cuentas</a></strong> 
+                <div id="paj">
+                  <img src="img/cuentas.png" alt="">
+                </div>
+                <strong><a class="li" href="https://www.uniamazonia.edu.co/documentos/docs/Rectoria/Informes%20de%20Gestion/2023/Informe%20Audiencia%20P%C3%BAblica%20de%20rendicion.pdf">Informe de audiencia Publica. Rendicion de cuentas</a></strong> 
               </div>
             </div>
           </div>
@@ -673,10 +676,6 @@
     </div>
 
     <div class="row footer">
-      
-        <!-- <blockquote class="blockquote tituloNoticias p-2">
-          <h3>Enlaces Institucionales</h3>
-        </blockquote> -->
         <figure class="text-center">
           <blockquote class="blockquote tituloNoticias">
             <h1>Enlaces Institucionales</h1>
@@ -723,7 +722,7 @@
       <div class="row copy ">
         <div class="col copy">
           Copyright © 2022 uniamazonia.edu.co. Todos los derechos reservados. |
-          <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/politica-de-privacidad.html" id="politica">Politica de Privacidad</a>
+          <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/politica-de-privacidad.html" class="politica">Politica de Privacidad</a>
         </div>
       </div>
       <div class="row">

@@ -6,15 +6,31 @@
     display: none;
 }
 
-.mostrar_enlaces{
+.row.mostrar_enlaces{
+    background-color: transparent;
+}
+
+.col.mostrar_enlaces{
+    padding: 0;
     display: flex;
-    background-color: white;
+
+    justify-content: end;
+    align-items: end;
+    background-color: #056c0c;
+
+    height: 8vh;
 
     .btn-primary{
         margin: 10px;
-        background-color:  #fe3f3f;
-        border-color: #fe3f3f;
+        background-color:  #09d615;
+        border-color: #09d615;
+        color: black;
+    }
 
+    .btn-primary:hover{
+        background-color: #0fe71c;
+        border-color: #0fe71c;
+        
     }
 
     .nav{
@@ -71,7 +87,7 @@
 }
 
 .impor{
-    display: none;
+    display: block;
 }
 
 .salir{
@@ -82,7 +98,20 @@
     display: none;
 }
 
-@media (max-width: 799px) and (min-width:500px){
+
+.row.imagen.container-fluid.p-0{
+    display: none;
+}
+
+.blockquote.noticios{
+    display: block;
+}
+
+.row.texto.formacion{
+    display: none;
+}
+
+@media (max-width: 849px) and (min-width:500px){
 
     .sitios{
         display: none;
@@ -126,7 +155,7 @@
     }
 
     .impor{
-        display: none;
+        display: block;
     }
 
     .salir{
@@ -137,9 +166,29 @@
         display: flex;
     }
 
+    #contenedor-imagen{
+        display: none;
+    }
+
+    .row.imagen.container-fluid.p-0{
+        display: none;
+    }
+
+    .blockquote.noticios{
+        display: block;
+    }
+
+    .blockquote.formacion{
+        display: block;
+    }
+
+    .row.texto.formacion{
+        display: block;
+    }
+
 }
 
-@media (min-width:800px) {
+@media (min-width:850px) {
 
     .sitios{
         display: block;
@@ -161,7 +210,7 @@
     }
 
     .blockquote_primerTitulo{
-        display: none;
+        display: block;
     }
 
     .blockquote{
@@ -190,6 +239,21 @@
         display: flex;
     }
 
+    .row.imagen.container-fluid.p-0{
+        display: block;
+    }
+
+    .row.texto.inicio{
+        display: none;
+    }
+
+    .blockquote.noticios{
+        display: block;
+    }
+
+    .row.texto.formacion{
+        display: block;
+    }
     
 
 }

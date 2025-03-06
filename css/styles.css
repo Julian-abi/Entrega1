@@ -3,8 +3,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
-
-    
 }
 
 
@@ -12,11 +10,8 @@
     margin: 0;
 }
 
+
 .col.sitios{
-
-    /* background-color: #1ec122;  */
-    /* background-image: linear-gradient(to top,#099209,#1bb908,#1bd205);   */
-
     .nav-item {
         border-right: solid;
         color: #ffffff;
@@ -59,20 +54,11 @@
 
 }
 
-.primera_imagen {
-    justify-content: center;
-    align-items: center;
-
-    .primera {
-        width: 80vw;
-        height: 40vh;
-    }
-
-}
 
 .row.sitios{
     margin: 0;
     display: flex;
+    background-color: white;
 }
 .row.imagen.container-fluid.p-0{
     height: 120vh;
@@ -98,7 +84,10 @@
 
 .row.texto{
     width: 100vw;
-    height: 15vh;
+
+    .text-center{
+        margin-top: 10px;
+    }
 
 }
 
@@ -166,20 +155,32 @@
 .row.texto.formacion{
 
     background-image: linear-gradient(to top, #e4dfdf,#f3f0f0, #ebf0ea);
-    height: 90vh;
-    margin-top: 30px;
-    margin-bottom: 150px;
+    /* height: 70vh; */
+    /* margin-top: px; */
+    /* margin-bottom: 150px; */
 
     .text-center{
         height: 10vh;
-        margin-bottom: 15px;
-        padding-bottom: 10px;
+        padding: 0;
+        padding-top: 5px;
+        margin: 0;
+        /* margin-bottom: 15px; */
+        /* padding-bottom: 10px; */
     }
     
 
     #carouselExample{
         padding: 0px;
         height: 100%;
+
+        &.carousel-inner{
+            height: 20vh;
+        }
+
+        /* &.carousel.slide{
+            height: 57vh;
+        } */
+        /* iv id="carouselExample" class="carousel slide"> */
     }
 
 }
@@ -222,8 +223,6 @@
 
 .row.repositorios {
 
-    
-    
     margin: 5px;
 
     .card {
@@ -359,7 +358,7 @@
 
     background-color: white;
 
-    #politica{
+    .politica{
         margin-left: 6px;
         color: #000;
     }
@@ -370,3 +369,62 @@
 .parte_Informacion{
     padding-bottom: 20px;
 }
+
+.accordion{
+
+    border-radius: 0px;
+
+    
+
+    .accordion-header{
+        color: #208716;
+    }
+
+    .accordion-button{
+        background-color: #208716;
+        color: white;
+    }
+
+    .accordion-button:hover{
+        background-color: #84f560;
+        color: #000;
+    }
+
+    .accordion-body{
+
+        background-color: white;
+
+        #paj{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .li{
+            text-decoration: none;
+            color: black;
+        }
+
+        .li:hover{
+            color: #ef0404;
+        }
+    }
+
+}
+
+.row.tablet{
+    padding: 0;
+
+    .img-fluid.tablet{
+        padding: 0;
+    }
+}
+
+.row.noticios{
+
+    .text-center{
+        margin-top: 10px;
+    }
+}
+
+
